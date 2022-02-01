@@ -4,9 +4,8 @@
 package main
 
 // 10열에 fmt가 호출되면 자동으로 import 된다
-import "fmt"	
+import "fmt"
 
 func main() {
-fmt.Println("hello, world");
+	fmt.Println("hello, world")
 }
-
