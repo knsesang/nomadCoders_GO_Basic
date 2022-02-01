@@ -6,10 +6,13 @@ package main
 // 10열에 fmt가 호출되면 자동으로 import 된다
 import (
 	"fmt"
+
+	"github.com/knsesang/nomadCoders_GO_Basic/banking"
 )
 
 func main() {
 	fmt.Println("main start")
 
+	account := banking.New
 	fmt.Println("main end")
 }
