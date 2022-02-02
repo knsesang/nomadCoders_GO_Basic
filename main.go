@@ -32,6 +32,6 @@ func main() {
 
 	fmt.Println("------- end  2--------")
 
-	dictionary := mydict.dictionary{}
+	dictionary := mydict.Dictionary{}
 	// myDict.Dictionary
 }
