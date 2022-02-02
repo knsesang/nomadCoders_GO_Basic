@@ -6,11 +6,32 @@ package main
 // 10열에 fmt가 호출되면 자동으로 import 된다
 import (
 	"fmt"
+	"log"
+	"u_accounts"
 )
 
 func main() {
-	fmt.Println("main start")
-	account := banking..Account{Owner: "nico", Balance: 1000}
+	account := u_accounts.NewAccount("Nico")
 
-	fmt.Println("main end")
+	fmt.Println(account)
+
+	account.Deposit(10)
+	fmt.Println("account.Balance() before : ", account.Balance())
+
+	fmt.Println("account.Withdraw(5)")
+
+	err := account.Withdraw(5)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fmt.Println("account.Balance after: ", account.Balance())
+
+	fmt.Println("account.Balance : ", account.Balance(), "account.Owner : ", account.Owner())
+
+	fmt.Println("------- end --------")
+
+	fmt.Println("------- end  2--------")
+
+	dictionary := mydict.dictionary{}
+	// myDict.Dictionary
 }
