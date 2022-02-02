@@ -10,7 +10,7 @@ import (
 
 func main() {
 	fmt.Println("main start")
+	account := banking..Account{Owner: "nico", Balance: 1000}
 
-	account := banking.Account{}
 	fmt.Println("main end")
 }

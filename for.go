@@ -78,6 +78,6 @@ func for_6(numbers ...int) {
 
 func for_7(numbers ...int) {
 	for _, value := range numbers {
-		fmt.Println(_, value)
+		fmt.Println(value)
 	}
 }
